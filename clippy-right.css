@@ -1,0 +1,8 @@
+.office-assistant { right: 10px; left: auto; }
+.assistant-clip { right: 0; left: auto; }
+.assistant-bubble { right: 82px; left: auto; padding-right: 10px; padding-left: 22px; }
+.assistant-bubble::after { right: 16px; left: auto; transform: rotate(-18deg); }
+
+@media (max-width: 700px) {
+  .office-assistant { right: 5px; left: auto; transform-origin: right bottom; }
+}
