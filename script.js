@@ -3,7 +3,7 @@ const APPS = {
   about:{name:'About Me.txt',icon:'assets/notepad.png'},contact:{name:'Contact',icon:'assets/mail.png'},
   settings:{name:'Settings',icon:'assets/settings.png'},recycle:{name:'Recycle Bin',icon:'assets/bin.png'}
 };
-const DESKTOP=[['computer',18,18],['projects',18,112],['about',18,206],['contact',18,300],['github',112,18],['settings',112,112],['recycle',18,394]];
+const DESKTOP=[['about',8,16],['computer',8,100],['projects',8,184],['contact',8,268],['recycle',8,352],['github',88,16],['settings',88,100]];
 const PROJECTS=[['Windows 95 Portfolio','HTML · CSS · JavaScript','duartess7.github.io'],['Daily Planner','Next.js · PWA','daily-planner'],['Web Code Editor','Next.js · Monaco','web-code-editor'],['Nightfall Protocol','GitHub Analytics','nightfall-metrics'],['Nightfall Serpent','Python · SVG','nightfall-snake']];
 const state={windows:{},z:20,selected:null,active:null};
 const $=s=>document.querySelector(s); const desktop=$('#desktop'), icons=$('#desktop-icons'), windows=$('#windows'), tasks=$('#tasks'), start=$('#start-menu');
@@ -40,3 +40,4 @@ $('#start-button').onclick=e=>{e.stopPropagation();start.hidden=!start.hidden;e.
 document.querySelectorAll('[data-close-modal]').forEach(b=>b.onclick=()=>$('#shutdown-modal').hidden=true);$('#power-off').onclick=()=>{$('#shutdown-modal').hidden=true;$('#power-screen').hidden=false};$('#power-screen button').onclick=()=>$('#power-screen').hidden=true;
 $('.clippy-close').onclick=()=>$('#clippy').remove();const tips=['Welcome! Double-click an icon to explore my portfolio.','The Projects folder contains my latest work.','Try opening My Computer or the Start menu.'];let tip=0;$('.clippy-image').onclick=()=>{$('.clippy-bubble').textContent=tips[++tip%tips.length]};
 function tick(){ $('#clock').textContent=new Intl.DateTimeFormat('en-US',{hour:'2-digit',minute:'2-digit'}).format(new Date()) }tick();setInterval(tick,30000);
+$('#notification').onclick=()=>$('#notification').remove();setTimeout(()=>$('#notification')?.remove(),11000);openApp('about');state.windows.about.el.style.left='80px';state.windows.about.el.style.top='88px';
