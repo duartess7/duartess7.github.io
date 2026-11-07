@@ -5,15 +5,15 @@
   --black: #555;
   --white: #fff;
   --grey: #dedede;
-  --primary-color: #f9d64a;
-  --primary-color-dark: rgb(97.0695187166%, 79.9750445633%, 11.5971479501%);
-  --primary-color-tint: #fff3a8;
-  --secondary-color: #f6d77d;
-  --secondary-color-dark: rgb(85.5663704331%, 65.162082099%, 5.9238256454%);
-  --secondary-color-tint: rgb(97.7655522641%, 90.0691211736%, 67.7246438144%);
-  --accent-color: #ff6170;
-  --water-color: #78c5f7;
-  --blush-color: #ff6f91;
+  --primary-color: #ffe6a4;
+  --primary-color-dark: rgb(100%, 86.3499245852%, 50.3137254902%);
+  --primary-color-tint: rgb(100%, 95.6905839259%, 84.3137254902%);
+  --secondary-color: #ffeebd;
+  --secondary-color-dark: rgb(100%, 77.8787878788%, 14.1176470588%);
+  --secondary-color-tint: rgb(100%, 98.4848484848%, 94.1176470588%);
+  --accent-color: #f66a6a;
+  --water-color: #a4ceff;
+  --blush-color: #ff8394;
 }
 
 * {
@@ -303,12 +303,10 @@ body {
   transform: translateX(-50%) scaleY(0.85);
   border-radius: 100%;
   border: 4.5rem solid var(--accent-color);
-  filter: drop-shadow(0 0.2rem 0 rgba(196, 54, 75, 0.16));
 }
 .psy-tube-front {
   z-index: 4;
-  border-color: var(--accent-color);
-  clip-path: inset(49% -8% -8% -8%);
+  border-top-color: transparent;
 }
 .psy-tube-front::before, .psy-tube-front::after {
   content: "";
