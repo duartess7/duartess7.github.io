@@ -306,7 +306,8 @@ body {
 }
 .psy-tube-front {
   z-index: 4;
-  border-top-color: transparent;
+  border-color: var(--accent-color);
+  clip-path: inset(calc(50% - 1px) -8% -8% -8%);
 }
 .psy-tube-front::before, .psy-tube-front::after {
   content: "";
@@ -332,9 +333,8 @@ body {
 }
 .psy-tube-back {
   z-index: 1;
-  border-color: transparent;
-  border-top-color: var(--accent-color);
-  transform: translateX(-50%) scaleY(0.86) scaleX(1.008);
+  border-color: var(--accent-color);
+  clip-path: inset(-8% -8% calc(50% - 1px) -8%);
 }
 .psy-torso {
   border-top-left-radius: 40% 60%;
