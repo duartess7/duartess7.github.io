@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fff2b8">
+  <title>Uma mensagem do Psyduck</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="scene">
+    <p class="intro" id="intro">Psyduck quer te contar uma coisa...</p>
+    <div class="container psy" id="psyduck" role="button" tabindex="0" aria-label="Toque no Psyduck para descobrir a mensagem">
+      <div class="psy-head">
+        <div class="psy-face">
+          <div class="psy-eye-wrap"><div class="psy-eye psy-eye-left"></div></div>
+          <div class="psy-eye-wrap"><div class="psy-eye psy-eye-right"></div></div>
+          <div class="psy-blush psy-blush-left"></div><div class="psy-blush psy-blush-right"></div>
+        </div>
+        <div class="psy-beak"><div class="psy-beak-nose"></div></div><div class="psy-hair"></div>
+      </div>
+      <div class="psy-body">
+        <div class="psy-arm psy-arm-left"><div class="psy-arm-claw"></div></div>
+        <div class="psy-arm psy-arm-right"><div class="psy-arm-claw"></div></div>
+        <div class="psy-tube psy-tube-front"></div><div class="psy-tube psy-tube-back"></div><div class="psy-torso"></div>
+        <div class="psy-foot psy-foot-left"><div class="psy-foot-web"></div></div>
+        <div class="psy-foot psy-foot-right"><div class="psy-foot-web"></div></div>
+        <div class="water-magic"></div><div class="water-ripple water-ripple-highlight"></div><div class="water-ripple water-ripple-shadow"></div>
+      </div>
+      <div class="psy-thoughts psy-thoughts-1"><span class="psy-thoughts-symbol">?</span></div>
+      <div class="psy-thoughts psy-thoughts-2"><span class="psy-thoughts-symbol">?</span></div>
+    </div>
+    <section class="message" id="message" aria-live="polite" aria-hidden="true">
+      <span class="message-small">no meio de toda essa confusão...</span>
+      <strong>eu te amo</strong><span class="heart" aria-hidden="true">♥</span>
+    </section>
+    <button class="tap" id="tapButton" type="button"><span class="tap-icon">☝</span> toca no Psyduck</button>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
+
+
