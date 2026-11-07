@@ -13,7 +13,7 @@ function revealLove() {
     scene.classList.add('revealed');
     message.setAttribute('aria-hidden', 'false');
     psyduck.setAttribute('aria-label', 'Psyduck diz: eu te amo');
-  }, 2100);
+  }, 3600);
 }
 
 psyduck.addEventListener('click', revealLove);
