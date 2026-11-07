@@ -334,6 +334,7 @@ body {
   z-index: 1;
   border-color: transparent;
   border-top-color: var(--accent-color);
+  transform: translateX(-50%) scaleY(0.86) scaleX(1.008);
 }
 .psy-torso {
   border-top-left-radius: 40% 60%;
